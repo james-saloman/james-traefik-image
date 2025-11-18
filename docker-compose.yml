@@ -29,6 +29,8 @@
         traefik.enable: "true"
         traefik.hostname: "proxy"
     
-    networks:
-      default:
-        name: proxy
+  networks:
+    default:
+    proxy:
+      external: true
+      name: proxy
